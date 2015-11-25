@@ -99,7 +99,8 @@ public class RedpinLocator implements ILocator {
 	
 	@Override
 	public Location locate(Measurement currentMeasurement) {
-		
+
+		System.out.println("HI2");
 		if(debug) {
 			loadParameters();
 		}
@@ -238,10 +239,10 @@ public class RedpinLocator implements ILocator {
 		/*
 		 * get the total credit for this measurement.
 		 */
-		totalCredit += this_vect.size()
+		totalCredit += other_vect.size()
 				* ID_POS_CONTRIBUTION;
 		
-		totalCredit += this_vect.size()
+		totalCredit += other_vect.size()
 				* SIGNAL_CONTRIBUTION;
 		
 

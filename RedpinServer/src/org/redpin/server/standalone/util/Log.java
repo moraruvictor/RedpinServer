@@ -23,6 +23,7 @@ package org.redpin.server.standalone.util;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import java.util.logging.XMLFormatter;
@@ -61,7 +62,7 @@ public class Log {
 				}
 				
 				logger.addHandler(fh);
-				logger.setLevel(Configuration.LogLevel);
+				logger.setLevel(Level.ALL);
 			} catch (SecurityException e) {
 				// TODO Auto-generated catch block
 				System.err.println(e.getMessage());

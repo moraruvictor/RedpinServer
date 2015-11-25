@@ -40,9 +40,9 @@ public class LocatorHome {
 		}
 		
 		if (locator instanceof RedpinLocator) {
-			if (SVMSupport.isTrained()) {
-				locator = new SVMLocator();		//locator is changed only once 
-			}
+			//if (SVMSupport.isTrained()) {
+			//	locator = new SVMLocator();		//locator is changed only once 
+			//}
 		}
 		
 		return locator;

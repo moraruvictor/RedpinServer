@@ -54,7 +54,8 @@ public class SVMLocator implements ILocator {
 	public Location locate(Measurement currentMeasurement) 
 	{
 		Location l = null;
-		
+
+		System.out.println("HI3");
 		try {
 			
 			String outputfile = SVMSupport.predict(currentMeasurement);		

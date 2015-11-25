@@ -88,7 +88,6 @@ public class ConnectionHandler implements Runnable {
 			
 			e.printStackTrace();
 		}
-		
 		log.fine("Connection Handler " + Thread.currentThread().getId() +": Closed Connection " + socket.getInetAddress().getHostName() + ":" + socket.getPort());
 		
 		

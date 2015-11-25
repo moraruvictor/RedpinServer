@@ -52,6 +52,8 @@ public class GetLocationHandler implements IHandler {
 	 */
 	@Override
 	public Response handle(JsonElement data) {
+
+		System.out.println("HI");
 		Response res;
 		Location loc;
 		

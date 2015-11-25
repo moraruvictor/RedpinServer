@@ -132,7 +132,7 @@ public class RedpinStandaloneServer implements Runnable {
 			notifyAll();
 		}
     	System.out.println("Stopped server at " + serverSocket.getInetAddress().getHostName() + ":"+ serverSocket.getLocalPort() );
-    	
+    	System.exit(0);
     }
     
     /**

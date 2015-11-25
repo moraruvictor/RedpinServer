@@ -78,7 +78,6 @@ public class RequestHandler {
 	 * @return response as string
 	 */
 	public String request(String request) {
-		
 		Response response = new Response(Status.failed, null, null);
 		
 		Gson gson = GsonFactory.getGsonInstance();
